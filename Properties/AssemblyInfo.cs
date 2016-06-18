@@ -12,8 +12,8 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyDescription ("Propias barras de progreso")]
 [assembly: AssemblyConfiguration ("")]
 [assembly: AssemblyCompany ("GNR092")]
-[assembly: AssemblyProduct ("CustomProgressBar")]
-[assembly: AssemblyCopyright ("GNR092 Copyright 2016")]
+[assembly: AssemblyProduct("CustomProgressBar By GNR092")]
+[assembly: AssemblyCopyright("Copyright GNR092  2016")]
 [assembly: AssemblyTrademark ("")]
 [assembly: AssemblyCulture ("")]
 // This sets the default COM visibility of types in the assembly to invisible.
@@ -25,8 +25,8 @@ using System.Runtime.InteropServices;
 //
 // You can specify all the values or you can use the default the Revision and 
 // Build Numbers by using the '*' as shown below:
-[assembly: AssemblyVersion ("1.0.0.0")]
-[assembly: AssemblyFileVersion ("1.0.0.0")]
+[assembly: AssemblyVersion("1.5.0.*")]
+[assembly: AssemblyFileVersion("1.5.0.0")]
 [assembly: Guid ("42e6e075-a93a-4eb8-ab07-56c8a3fed44e")]
 [assembly: NeutralResourcesLanguage ("es-MX")]
 [assembly: AssemblyInformationalVersion ("CustomProgressBar")]

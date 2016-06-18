@@ -8,9 +8,10 @@
     <OutputType>Library</OutputType>
     <RootNamespace>CustomProgressBar</RootNamespace>
     <AssemblyName>CustomProgressBar</AssemblyName>
-    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <NoWin32Manifest>False</NoWin32Manifest>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Platform)' == 'AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -33,6 +34,12 @@
   </PropertyGroup>
   <PropertyGroup>
     <SignAssembly>false</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|AnyCPU'">
+    <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Microsoft.CSharp">
@@ -66,6 +73,12 @@
     <Compile Include="ProgressBarImageGUI.Designer.cs">
       <DependentUpon>ProgressBarImageGUI.cs</DependentUpon>
     </Compile>
+    <Compile Include="ProgressBarImageGUI_Lower.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ProgressBarImageGUI_Lower.Designer.cs">
+      <DependentUpon>ProgressBarImageGUI_Lower.cs</DependentUpon>
+    </Compile>
     <Compile Include="ProgressBarImage_new.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -92,6 +105,9 @@
     <EmbeddedResource Include="ProgressBarImageGUI.resx">
       <DependentUpon>ProgressBarImageGUI.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ProgressBarImageGUI_Lower.resx">
+      <DependentUpon>ProgressBarImageGUI_Lower.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ProgressBarImage_new.resx">
       <DependentUpon>ProgressBarImage_new.cs</DependentUpon>
     </EmbeddedResource>
@@ -117,6 +133,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\TerrariaProgressBa_Bar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Outer Lower.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ProgresBar_Bar.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

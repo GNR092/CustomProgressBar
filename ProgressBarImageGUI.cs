@@ -58,7 +58,7 @@ namespace CustomProgressBar
                     g.DrawImage(Properties.Resources.Outer_Corrupt, 0, 0);
                     break;
                 case DownloadState.Check:
-                    g.DrawImage(Properties.Resources.TerrariaProgressBa_Bar, 25, 38);
+                    g.DrawImage(Properties.Resources.progressbar, 25, 38, (int)((Valor / 100) * 569), 20);
                     g.DrawImage(Properties.Resources.Outer_Corrupt, 0, 0);
                     break;
                 case DownloadState.Ready:
